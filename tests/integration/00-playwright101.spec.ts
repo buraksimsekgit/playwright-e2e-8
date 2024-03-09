@@ -19,7 +19,7 @@ test("Playwright 101 - Test Case 3", async ({ page }) => {
   await page.goto("https://techglobal-training.com");
 });
 
-test.only('Playwright 101 - Test Case 4', async () => {
+test('Playwright 101 - Test Case 4', async () => {
 
     const browser = await chromium.launch()
     const context = await browser.newContext()
@@ -29,5 +29,18 @@ test.only('Playwright 101 - Test Case 4', async () => {
 
     await page.close()
 })
+
+test("Playwright 101 | Incognito example with browser fixture - Test Case 5", async ({ browser }) => {
+
+    // Create a new incognito browser context
+    const context = await browser.newContext()
+
+    const page = await context.newPage()
+
+    await page.goto("https://techglobal-training.com");
+
+    await page.close()
+
+  });
 
 
