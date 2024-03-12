@@ -1,13 +1,13 @@
-import { test, expect } from "@playwright/test";
-import { clickLink } from "../../helpers/clickHelpers";
+import { test, expect } from '@playwright/test'
+import { clickLink } from '../../helpers/clickHelpers'
 
-test.describe("Annotations", () => {
+test.describe('Annotations', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://techglobal-training.com/frontend");
+    await page.goto('https://techglobal-training.com/frontend')
 
     // await page.locator('a', { hasText: 'Html Elements'}).click()
-    await clickLink(page, "Html Elements");
-  });
+    await clickLink(page, 'Html Elements')
+  })
 
   // test.fail('Annotations - fail', async ({ page }) => {
   //     // test.fail()
@@ -45,7 +45,7 @@ test.describe("Annotations", () => {
    * 6. Validate their id and value
    */
 
-  test("Annotations - step @smoke", async ({ page }, testInfo ) => {
+  test('Annotations - step @smoke', async ({ page }, testInfo ) => {
 
     testInfo.error?.message
 
@@ -64,5 +64,5 @@ test.describe("Annotations", () => {
     await test.step('5. Validate their texts are equal to expected texts', async () => {
         await expect(paragraphs).toHaveText(['Hello World!', 'I like automation testing!'])
     })
-  });
-});
+  })
+})

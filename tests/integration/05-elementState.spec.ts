@@ -1,13 +1,13 @@
-import { test } from "@playwright/test";
-import { clickLink } from "../../helpers/clickHelpers";
+import { test } from '@playwright/test'
+import { clickLink } from '../../helpers/clickHelpers'
 
-test.describe("Element State", () => {
+test.describe('Element State', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://techglobal-training.com/frontend");
+    await page.goto('https://techglobal-training.com/frontend')
 
     // await page.locator('a', { hasText: 'Html Elements'}).click()
-    await clickLink(page, "Html Elements");
-  });
+    await clickLink(page, 'Html Elements')
+  })
 
   test('Getting Element State', async ({ page }) => {
 
@@ -48,5 +48,5 @@ test.describe("Element State", () => {
     }
 
   })
-});
+})
 

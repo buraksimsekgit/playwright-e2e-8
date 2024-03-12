@@ -1,29 +1,31 @@
-import { test } from "@playwright/test";
-import { clickLink } from "../../helpers/clickHelpers";
+import { test } from '@playwright/test'
+import { clickLink } from '../../helpers/clickHelpers'
 
-test.describe("User Actions", () => {
+test.describe('User Actions', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://techglobal-training.com/frontend");
+    await page.goto('https://techglobal-training.com/frontend')
 
     // await page.locator('a', { hasText: 'Html Elements'}).click()
-    await clickLink(page, "Html Elements");
-  });
+    await clickLink(page, 'Html Elements')
+  })
 
-  test("User Actions - Click and Hover", async ({ page }) => {
-    const dropdownButton = page.locator("#dropdown-button");
+  test('User Actions - Click and Hover', async ({ page }) => {
+    const dropdownButton = page.locator('#dropdown-button')
 
-    await dropdownButton.hover();
-  });
+    await dropdownButton.hover()
 
-  test("User Actions, Type", async ({ page }) => {
-    const textInput1 = page.locator("#text_input1");
+    let myName;
+  })
 
-    await textInput1.fill("Cypress");
-    await textInput1.fill("Playwright");
+  test('User Actions, Type', async ({ page }) => {
+    const textInput1 = page.locator('#text_input1')
+
+    await textInput1.fill('Cypress')
+    await textInput1.fill('Playwright')
     //CypressPlaywright
 
-    console.log(page.viewportSize());
-  });
+    console.log(page.viewportSize())
+  })
 
   test('User Actions - Checkbox and Radio Buttons', async ({ page }) => {
 
@@ -70,4 +72,4 @@ test.describe("User Actions", () => {
     await page.keyboard.press('Enter')
 
   })
-});
+})

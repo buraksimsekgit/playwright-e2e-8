@@ -1,50 +1,50 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test'
 
-test.describe("First test suite", () => {
-  test("Refresh, navigate back and forward", async ({ page }) => {
+test.describe('First test suite', () => {
+  test('Refresh, navigate back and forward', async ({ page }) => {
     // Navigate to a page
-    await page.goto("https://techglobal-training.com");
+    await page.goto('https://techglobal-training.com')
 
     // Refresh the page
-    await page.reload();
+    await page.reload()
 
     // Navigate to another page
-    await page.goto("https://techglobal-training.com/frontend");
+    await page.goto('https://techglobal-training.com/frontend')
 
     // Navigating back
-    await page.goBack();
+    await page.goBack()
 
     // Navigate forward
-    await page.goForward();
-  });
+    await page.goForward()
+  })
 
-  test("Validate page Title", async ({ page }) => {
-    await page.goto("https://techglobal-training.com");
+  test('Validate page Title', async ({ page }) => {
+    await page.goto('https://techglobal-training.com')
 
-    const title = await page.title();
+    const title = await page.title()
 
     // 1st way to assert Title
     // expect(title).toBe('TechGlobal Training | Home')
 
     // 2nd way to assert Title
-    await expect(page).toHaveTitle("TechGlobal Training | Home");
-  });
+    await expect(page).toHaveTitle('TechGlobal Training | Home')
+  })
 
-  test("Validate page URL", async ({ page }) => {
-    await page.goto("https://techglobal-training.com");
+  test('Validate page URL', async ({ page }) => {
+    await page.goto('https://techglobal-training.com')
 
-    const url = page.url();
+    const url = page.url()
 
     // 1st way to assert URL
     // expect(url).toBe("https://techglobal-training.com");
 
     // 2nd way to assert Title
-    await expect(page).toHaveURL("https://techglobal-training.com");
-  });
+    await expect(page).toHaveURL('https://techglobal-training.com')
+  })
 
-  test("My First Test", async ({ page }) => {
+  test('My First Test', async ({ page }) => {
 
-    await page.goto("https://techglobal-training.com");
+    await page.goto('https://techglobal-training.com')
 
     // await page.click('#logo')
 
@@ -53,5 +53,5 @@ test.describe("First test suite", () => {
     await myLogo.click()
 
     await expect(myLogo).toBeVisible()
-  });
-});
+  })
+})
