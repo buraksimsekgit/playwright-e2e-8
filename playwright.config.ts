@@ -29,7 +29,7 @@ export default defineConfig({
   reporter: [
     ['html', { open: 'never' }],
     // ["json", { outputFile: "json/results.json" }],
-    // ["junit", { outputFile: "junit/results.xml" }],
+    ["junit"],
     ['list'],
   ],
 
