@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "user",
-      "value": "4064e112-eb91-ce64-795c-058a00fbad2d",
+      "value": "a1f26b5f-310e-c7be-8a1a-e8ac2c5d8638",
       "domain": "demoblaze.com",
       "path": "/",
       "expires": -1,
@@ -12,7 +12,7 @@
     },
     {
       "name": "tokenp_",
-      "value": "dGVzdDE3MTEzNDQ=",
+      "value": "dGVzdDE3MTE0MDE=",
       "domain": "demoblaze.com",
       "path": "/",
       "expires": -1,

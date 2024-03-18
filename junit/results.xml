@@ -1,0 +1,311 @@
+<testsuites id="" name="" tests="66" failures="0" skipped="0" errors="0" time="11.501107">
+<testsuite name="setup/global.teardown.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="teardown" tests="1" failures="0" skipped="0" time="0.795" errors="0">
+<testcase name="do logout" classname="setup/global.teardown.ts" time="0.795">
+<system-out>
+<![CDATA[SIGNED OUT
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="setup/global.setup.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="setup" tests="1" failures="0" skipped="0" time="1.443" errors="0">
+<testcase name="do login" classname="setup/global.setup.ts" time="1.443">
+<system-out>
+<![CDATA[THE STATE IS SAVED!
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api/students.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="4" failures="0" skipped="0" time="1.204" errors="0">
+<testcase name="Students › Create a new student using POST" classname="api/students.spec.ts" time="0.509">
+<system-out>
+<![CDATA[Status Code:  [33m200[39m
+{
+  id: [33m3506[39m,
+  firstName: [32m'Kristian'[39m,
+  lastName: [32m'Lubowitz'[39m,
+  email: [32m'Kristian_Shields@gmail.com'[39m,
+  dob: [32m'2023-12-05'[39m
+}
+Kristian
+3506,2023-12-05,Kristian_Shields@gmail.com,Kristian,Lubowitz Is my Query
+]]>
+</system-out>
+</testcase>
+<testcase name="Students › Create a new request using GET" classname="api/students.spec.ts" time="0.124">
+<system-out>
+<![CDATA[{
+  id: [33m3506[39m,
+  firstName: [32m'Kristian'[39m,
+  lastName: [32m'Lubowitz'[39m,
+  email: [32m'Kristian_Shields@gmail.com'[39m,
+  dob: [32m'2023-12-05'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Students › Update a request using PUT" classname="api/students.spec.ts" time="0.128">
+<system-out>
+<![CDATA[{
+  id: [33m3506[39m,
+  firstName: [32m'updatedKristian'[39m,
+  lastName: [32m'updatedLubowitz'[39m,
+  email: [32m'updatedKristian_Shields@gmail.com'[39m,
+  dob: [32m'2000-01-01'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Students › Delete a request using DELETE" classname="api/students.spec.ts" time="0.443">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.176" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="0.511">
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="0.665">
+</testcase>
+</testsuite>
+<testsuite name="integration/00-playwright101.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="4" failures="0" skipped="0" time="2.967" errors="0">
+<testcase name="Playwright 101 - Test Case 2" classname="integration/00-playwright101.spec.ts" time="0.073">
+</testcase>
+<testcase name="Playwright 101 - Test Case 3" classname="integration/00-playwright101.spec.ts" time="0.866">
+</testcase>
+<testcase name="Playwright 101 - Test Case 4" classname="integration/00-playwright101.spec.ts" time="1.217">
+</testcase>
+<testcase name="Playwright 101 | Incognito example with browser fixture - Test Case 5" classname="integration/00-playwright101.spec.ts" time="0.811">
+</testcase>
+</testsuite>
+<testsuite name="integration/01-firstTest.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="4" failures="0" skipped="0" time="3.408" errors="0">
+<testcase name="First test suite › Refresh, navigate back and forward" classname="integration/01-firstTest.spec.ts" time="1.33">
+</testcase>
+<testcase name="First test suite › Validate page Title" classname="integration/01-firstTest.spec.ts" time="0.674">
+</testcase>
+<testcase name="First test suite › Validate page URL" classname="integration/01-firstTest.spec.ts" time="0.661">
+</testcase>
+<testcase name="First test suite › My First Test" classname="integration/01-firstTest.spec.ts" time="0.743">
+</testcase>
+</testsuite>
+<testsuite name="integration/02-locators.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="6" failures="0" skipped="0" time="5.193" errors="0">
+<testcase name="Playwright locators › Playwright Locator API" classname="integration/02-locators.spec.ts" time="0.731">
+</testcase>
+<testcase name="Playwright locators › Playwright - Custom Pesuedo Classes" classname="integration/02-locators.spec.ts" time="0.872">
+</testcase>
+<testcase name="Playwright locators › Playwright - Chaining Locators" classname="integration/02-locators.spec.ts" time="0.87">
+</testcase>
+<testcase name="Playwright locators › Playwright - Handling multiple elements" classname="integration/02-locators.spec.ts" time="1">
+</testcase>
+<testcase name="Playwright locators › Playwright built-in locators" classname="integration/02-locators.spec.ts" time="0.819">
+</testcase>
+<testcase name="Playwright locators › Playwright - filter() locator API" classname="integration/02-locators.spec.ts" time="0.901">
+<system-out>
+<![CDATA[Amount of elements with label tag is: 9
+Amount of elements with label tag is but Java: 7
+The located elements returns: 6
+The located elements returns: 1
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/03-annotations.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.866" errors="0">
+<testcase name="Annotations › Annotations - step @smoke" classname="integration/03-annotations.spec.ts" time="0.866">
+<system-out>
+<![CDATA[Annotations - step @smoke
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/04-actionCommands.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="5" failures="0" skipped="0" time="4.339" errors="0">
+<testcase name="User Actions › User Actions - Click and Hover" classname="integration/04-actionCommands.spec.ts" time="0.782">
+</testcase>
+<testcase name="User Actions › User Actions, Type" classname="integration/04-actionCommands.spec.ts" time="0.855">
+<system-out>
+<![CDATA[{ width: [33m1920[39m, height: [33m1080[39m }
+]]>
+</system-out>
+</testcase>
+<testcase name="User Actions › User Actions - Checkbox and Radio Buttons" classname="integration/04-actionCommands.spec.ts" time="0.981">
+</testcase>
+<testcase name="User Actions › User Actions - Dropdowns" classname="integration/04-actionCommands.spec.ts" time="0.867">
+</testcase>
+<testcase name="User Actions › User Actions - Calendar / Date Pi`````cker" classname="integration/04-actionCommands.spec.ts" time="0.854">
+</testcase>
+</testsuite>
+<testsuite name="integration/05-elementState.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.739" errors="0">
+<testcase name="Element State › Getting Element State" classname="integration/05-elementState.spec.ts" time="0.846">
+</testcase>
+<testcase name="Element State › Getting Element State - Checkbox and Radio Buttons" classname="integration/05-elementState.spec.ts" time="0.893">
+</testcase>
+</testsuite>
+<testsuite name="integration/06-elementProperties.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.743" errors="0">
+<testcase name="Eleement Properties › Getting Element Properties" classname="integration/06-elementProperties.spec.ts" time="0.913">
+<system-out>
+<![CDATA[[ [32m'Headings\nProgramming Languages\nAutomation Tools'[39m ]
+Headings
+Programming Languages
+Automation Tools
+<h3>Headings</h3><h4 id="languages_heading">Programming Languages</h4><h4 id="tools_heading">Automation Tools</h4>
+HeadingsProgramming LanguagesAutomation Tools
+2 count of web elements
+Headings
+Microsoft
+]]>
+</system-out>
+</testcase>
+<testcase name="Eleement Properties › Executing JavaScript code in Playwright" classname="integration/06-elementProperties.spec.ts" time="0.83">
+<system-out>
+<![CDATA[TechGlobal Training | Html Elements
+TechGlobal Training | Html Elements
+rgb(105, 105, 105)
+[33m30[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/07-assertions.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="4" failures="0" skipped="0" time="6.115" errors="0">
+<testcase name="Assertions › Auto-retry, web-first async locator assertions" classname="integration/07-assertions.spec.ts" time="0.945">
+</testcase>
+<testcase name="Assertions › Non-retry Assertions" classname="integration/07-assertions.spec.ts" time="0.964">
+</testcase>
+<testcase name="Assertions › Creating custom assertions" classname="integration/07-assertions.spec.ts" time="3.228">
+<system-out>
+<![CDATA[20 is the count of the artciles
+Trying here! 20
+Trying here! 20
+Trying here! 20
+Trying here! 20
+Trying here! 40
+]]>
+</system-out>
+</testcase>
+<testcase name="Assertions › Soft Assertions" classname="integration/07-assertions.spec.ts" time="0.978">
+<system-out>
+<![CDATA[Checked
+Checked
+Checked
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/08-iFrames.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.195" errors="0">
+<testcase name="iFrames › iFrames Example" classname="integration/08-iFrames.spec.ts" time="1.117">
+</testcase>
+<testcase name="iFrames › iFrames Test Case" classname="integration/08-iFrames.spec.ts" time="1.078">
+</testcase>
+</testsuite>
+<testsuite name="integration/09-multipleTabs.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="3" failures="0" skipped="0" time="6.914" errors="0">
+<testcase name="Interacting Multiple tabs › Create a new tab" classname="integration/09-multipleTabs.spec.ts" time="2.512">
+</testcase>
+<testcase name="Interacting Multiple tabs › Interacting/switching to a new tab" classname="integration/09-multipleTabs.spec.ts" time="2.215">
+<system-out>
+<![CDATA[[33m1[39m
+[33m2[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="Interacting Multiple tabs › Test Case" classname="integration/09-multipleTabs.spec.ts" time="2.187">
+</testcase>
+</testsuite>
+<testsuite name="integration/10-dialogs.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.914" errors="0">
+<testcase name="Dialogs › Handling Dialogs" classname="integration/10-dialogs.spec.ts" time="0.914">
+<system-out>
+<![CDATA[You are on TechGlobal Training application.
+Would you like to stay on TechGlobal Training application?
+What would you like to say to TechGlobal?
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/11-advancedActions.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="4" failures="0" skipped="0" time="3.536" errors="0">
+<testcase name="Advanced user Actions › Mouse Actions" classname="integration/11-advancedActions.spec.ts" time="0.897">
+</testcase>
+<testcase name="Advanced user Actions › Keyboard Actions" classname="integration/11-advancedActions.spec.ts" time="0.944">
+</testcase>
+<testcase name="Advanced user Actions › Test Case" classname="integration/11-advancedActions.spec.ts" time="0.879">
+</testcase>
+<testcase name="Advanced user Actions › Test Case 2" classname="integration/11-advancedActions.spec.ts" time="0.816">
+</testcase>
+</testsuite>
+<testsuite name="integration/12-uploadAndDownload.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.727" errors="0">
+<testcase name="Download &amp; Upload › Download a file" classname="integration/12-uploadAndDownload.spec.ts" time="0.873">
+<system-out>
+<![CDATA[[33mtrue[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="Download &amp; Upload › Upload a file" classname="integration/12-uploadAndDownload.spec.ts" time="0.854">
+<system-out>
+<![CDATA[https://techglobal-training.com
+TechGlobal
+Test1234
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/13-pageObject.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.473" errors="0">
+<testcase name="Login › Test Positive" classname="integration/13-pageObject.spec.ts" time="0.754">
+</testcase>
+<testcase name="Login › Test Negative" classname="integration/13-pageObject.spec.ts" time="0.719">
+</testcase>
+</testsuite>
+<testsuite name="integration/14-todoApp-wo_fixtures.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.753" errors="0">
+<testcase name="todo tests › should add an item" classname="integration/14-todoApp-wo_fixtures.spec.ts" time="0.881">
+</testcase>
+<testcase name="todo tests › should remove an item" classname="integration/14-todoApp-wo_fixtures.spec.ts" time="0.872">
+</testcase>
+</testsuite>
+<testsuite name="integration/15-todoApp-w-fixtures.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.819" errors="0">
+<testcase name="todo test › should add an item" classname="integration/15-todoApp-w-fixtures.spec.ts" time="0.969">
+</testcase>
+<testcase name="todo test › should remove an item" classname="integration/15-todoApp-w-fixtures.spec.ts" time="0.85">
+</testcase>
+</testsuite>
+<testsuite name="integration/16-authState.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.31" errors="0">
+<testcase name="test" classname="integration/16-authState.spec.ts" time="1.31">
+</testcase>
+</testsuite>
+<testsuite name="integration/16-useAuthState.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.428" errors="0">
+<testcase name="menu" classname="integration/16-useAuthState.spec.ts" time="0.723">
+<system-out>
+<![CDATA[signed in
+]]>
+</system-out>
+</testcase>
+<testcase name="menu validate" classname="integration/16-useAuthState.spec.ts" time="0.705">
+<system-out>
+<![CDATA[signed in
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/18-visualRegression.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="6" failures="0" skipped="0" time="7.753" errors="0">
+<testcase name="Visual Regression › should take a screenshot" classname="integration/18-visualRegression.spec.ts" time="0.947">
+</testcase>
+<testcase name="Visual Regression › should take a screenshot of an element" classname="integration/18-visualRegression.spec.ts" time="0.881">
+</testcase>
+<testcase name="Visual Regression › should take a screenshot of a full page" classname="integration/18-visualRegression.spec.ts" time="2.241">
+</testcase>
+<testcase name="Visual Regression › should take a screenshot of a page but ignore some elements" classname="integration/18-visualRegression.spec.ts" time="1.711">
+</testcase>
+<testcase name="Visual Regression › take a screenshot and validate" classname="integration/18-visualRegression.spec.ts" time="0.87">
+</testcase>
+<testcase name="Visual Regression › should compare screenshot using method" classname="integration/18-visualRegression.spec.ts" time="1.103">
+</testcase>
+</testsuite>
+<testsuite name="integration/19-timeoutsAndWaits.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.029" errors="0">
+<testcase name="Timeouts &amp; Waits › Waits" classname="integration/19-timeoutsAndWaits.spec.ts" time="1.029">
+</testcase>
+</testsuite>
+<testsuite name="integration/17-globalSetup.spec.ts" timestamp="2024-03-18T22:33:43.244Z" hostname="loggedIn" tests="2" failures="0" skipped="0" time="1.444" errors="0">
+<testcase name="menu" classname="integration/17-globalSetup.spec.ts" time="0.722">
+<system-out>
+<![CDATA[signed in
+]]>
+</system-out>
+</testcase>
+<testcase name="menu validate" classname="integration/17-globalSetup.spec.ts" time="0.722">
+<system-out>
+<![CDATA[signed in
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
