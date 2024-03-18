@@ -1,5 +1,8 @@
 import { test, chromium } from '@playwright/test'
 
+
+// test.describe.configure({ mode: 'serial'})
+
 // This will trigget the test runner.
 // test("Playwright 101 - Test Case", () => {
 //   // Test to be executed
