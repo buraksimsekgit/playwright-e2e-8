@@ -22,12 +22,14 @@ test.describe('Element State', () => {
     const registerButtonState = await registerButton.isEnabled()
     const isMessageVisible = await buttonMessage.isVisible()
 
+    await page.pause()
+
     // Playwright automatically will check the element state, so this is just for demonstration purposes
     if(registerButtonState) {
         await registerButton.click()
     }
 
-    isMessageVisible ? await signInButton.click() : registerButton.click()
+    isMessageVisible ? await signInButton.click() : await registerButton.click()
 
   })
 

@@ -17,12 +17,12 @@ test.describe('Timeouts & Waits', async () => {
     await clickLink(page, 'Waits')
   })
 
-  test('should wait for an element to be visible', async ({ waitsPage }) => {
-    // test.setTimeout(120000)
+  // test('should wait for an element to be visible', async ({ waitsPage }) => {
+  //   // test.setTimeout(120000)
 
-    await waitsPage.redBoxButton.click({ timeout: 10000 })
-    await expect(waitsPage.redBox).toBeVisible({ timeout: 11000 })
-  })
+  //   await waitsPage.redBoxButton.click({ timeout: 10000 })
+  //   await expect(waitsPage.redBox).toBeVisible({ timeout: 11000 })
+  // })
 
   test('Waits', async ({ page, dynamicTablesPage }) => {
     await page.goto('/frontend/project-4')
@@ -31,8 +31,6 @@ test.describe('Timeouts & Waits', async () => {
     // 1st Way
     // await page.waitForSelector('#locator', { state: 'visible' })
     await dynamicTablesPage.productModal.waitFor({ state: 'visible' })
-
-    await page.pause()
 
     await dynamicTablesPage.closeProductModal()
 

@@ -2,23 +2,23 @@
   "cookies": [
     {
       "name": "user",
-      "value": "bb8f846c-b59e-9166-79e0-2d203d1668d4",
+      "value": "4064e112-eb91-ce64-795c-058a00fbad2d",
       "domain": "demoblaze.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "None"
+      "sameSite": "Lax"
     },
     {
       "name": "tokenp_",
-      "value": "dGVzdDE3MTA5Nzg=",
+      "value": "dGVzdDE3MTEzNDQ=",
       "domain": "demoblaze.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
-      "sameSite": "None"
+      "sameSite": "Lax"
     }
   ],
   "origins": []
